@@ -1,0 +1,152 @@
+/* General */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    color: #4a3f35;
+}
+
+.arizonia-regular {
+    font-family: "Arizonia", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.courgette-regular {
+    font-family: "Courgette", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Header */
+header {
+    background-color: #e6e1dc;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+header img {
+    max-width: 120px;
+}
+header h1 {
+    color: #8b5e3c;
+    font-size: 2rem;
+    margin: 0;
+}
+header p {
+    margin: 0;
+    font-size: 1rem;
+    color: #6c4f33;
+}
+
+/* Main Section */
+main {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Home Section */
+#home {
+    background-color: #e0ded8;
+    padding: 50px 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+#home h1 {
+    font-size: 3rem;
+    color: #8b5e3c;
+}
+#home p {
+    font-size: 1.2rem;
+    color: #6c4f33;
+}
+
+/* Section Titles */
+.section-title {
+    font-size: 2rem;
+    color: #8b5e3c;
+    margin-bottom: 30px;
+}
+
+/* Nosotros Section */
+#nosotros {
+    margin-bottom: 50px;
+}
+
+/* Servicios Section */
+#servicios {
+    background-color: #f9f9f9;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+#servicios h2 {
+    color: #8b5e3c;
+}
+#servicios .col-md-4 {
+    margin-bottom: 30px;
+}
+#servicios .col-md-4 h5 {
+    font-size: 1.5rem;
+    color: #8b5e3c;
+}
+
+/* Contact Section */
+#contacto {
+    margin-top: 50px;
+}
+#contacto iframe {
+    border: none;
+    width: 100%;
+    max-width: 640px;
+    height: 480px;
+}
+
+/* Footer */
+footer {
+    background-color: #e1dfd9;
+    padding: 20px;
+    font-size: 1rem;
+    color: #4a3f35;
+    text-align: center;
+}
+
+/* Animations */
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Custom Styles for Small Screens */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    header img {
+        margin-bottom: 10px;
+    }
+    .logo-font {
+        font-size: 1.2rem;
+    }
+    .section-title {
+        font-size: 1.5rem;
+    }
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    #home p {
+        font-size: 1.1rem;
+    }
+}
