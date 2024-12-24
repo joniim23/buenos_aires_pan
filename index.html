@@ -1,65 +1,100 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Buenos Aires Pan</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #e0ded8;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            color: #4a3f35;
-        }
-        header {
-            background-color: #e6e1dc;
-            padding: 20px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        }
-        header img {
-            max-width: 150px;
-        }
-        h1 {
-            color: #8b5e3c;
-        }
-        .promociones {
-            padding: 20px;
-        }
-        .promociones h2 {
-            color: #8b5e3c;
-            margin-bottom: 10px;
-        }
-        .promociones ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .promociones li {
-            font-size: 1.2em;
-            margin: 10px 0;
-        }
-        footer {
-            background-color: #e1dfd9;
-            padding: 10px;
-            font-size: 0.8em;
-            color: #4a3f35;
-            margin-top: 20px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buenos Aires Pan</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arizonia&family=Courgette&display=swap" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
-    <header>
-        <img src="img/bap_logo.png" alt="Logo Buenos Aires Pan">
-        <h1>Buenos Aires Pan</h1>
-        <p>El sabor de la tradición, todos los días.</p>
-    </header>
+  <header>
+    <img src="img/bap_logo.png" alt="Logo Buenos Aires Pan" class="logo-header">
+    <div>
+      <h1 class="logo-font arizonia-regular">Buenos Aires Pan</h1>
+      <p class="logo-font arizonia-regular">El sabor de la tradición, todos los días.</p>
+    </div>
+  </header>
 
-    <footer>
-        <p>Dirección: 📍 J. M. Campos 2341, San Andres, Buenos Aires  </p>
-        <p>📞 Teléfono: 11 5161 4540</p>
-        <p>🕒 Horario: Lunes a Sabados 7:00 - 14:00</p>
-        <p>&copy; 2024 Buenos Aires Pan</p>
-    </footer>
+  <main class="container my-5 courgette-regular">
+    <!-- Home Section -->
+    <section id="home" class="text-center py-5 fade-in">
+      <h1 class="display-4">Bienvenidos a Buenos Aires Pan</h1>
+      <p class="lead">Ofrecemos productos frescos y deliciosos elaborados con pasión y dedicación.</p>
+    </section>
+
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="py-5 fade-in">
+      <h2 class="text-center section-title">Nosotros</h2>
+      <p class="text-center">En Buenos Aires Pan, nuestra historia es tan rica como el pan que elaboramos. Más de 10 años de tradición, renovados por un nuevo impulso y visión para seguir creciendo.</p>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <h4>Misión</h4>
+          <p>Ofrecer productos de alta calidad, priorizando la entrega en tiempo y forma, con un enfoque en la sostenibilidad y el servicio personalizado para nuestros clientes mayoristas y minoristas.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Visión</h4>
+          <p>Ser un referente en la panadería artesanal y sostenible, expandiendo nuestra presencia en el Gran Buenos Aires y más allá, manteniendo el compromiso con la calidad y el servicio.</p>
+        </div>
+        <div class="col-md-4 text-center">
+          <h4>Valores</h4>
+          <p>Compromiso, calidad, trabajo en equipo y sostenibilidad, son los pilares que guían cada uno de nuestros productos y decisiones comerciales.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Servicios Section -->
+    <section id="servicios" class="py-5 bg-light fade-in">
+      <h2 class="text-center section-title">Servicios</h2>
+      <p class="text-center">Estos son algunos de nuestros productos destacados, elaborados con pasión y tecnología para satisfacer tanto a clientes mayoristas como minoristas.</p>
+      <div class="row text-center">
+        <div class="col-md-3">
+          <h5>Panificados</h5>
+          <p>Elaborados con ingredientes de la mejor calidad, nuestros panes son reconocidos por su frescura y sabor, ideales para panaderías, mayoristas y tiendas especializadas.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Facturas Tradicionales</h5>
+          <p>Delicias típicas argentinas, perfectas para cualquier ocasión, desde un desayuno familiar hasta un evento especial. Hechas con los mejores ingredientes y pasión.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Pastelería Personalizada</h5>
+          <p>Ofrecemos diseños únicos y personalizados para todo tipo de eventos, adaptados a las necesidades de nuestros clientes y utilizando solo los mejores ingredientes.</p>
+        </div>
+        <div class="col-md-3">
+          <h5>Productos Precocidos</h5>
+          <p>Pan y facturas precocidas en bolsas de 6kg. Solo necesitas colocarlas en el horno durante unos minutos y ¡saldrán espectaculares, como recién horneadas!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="py-5 fade-in">
+      <h2 class="text-center section-title">Contacto</h2>
+      <p class="text-center">Envíanos tus consultas a través del siguiente formulario:</p>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="d-flex justify-content-center">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d205.36230678275294!2d-58.537107385018025!3d-34.55869718225402!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb74168445a31%3A0x78a39d14e197da93!2sBuenos%20Aires%20Pan!5e0!3m2!1ses-419!2sar!4v1735012345561!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="d-flex justify-content-center">
+            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd3PUmw79MHkygUz2HsFRdiOqxtrJk_OmEldWm622A7ojPL8g/viewform?embedded=true" width="640" height="480" frameborder="0" marginheight="0" marginwidth="0" class="border rounded"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer-custom">
+    <p>&copy; 2024 Buenos Aires Pan. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
