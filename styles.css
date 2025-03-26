@@ -74,6 +74,19 @@ main {
     margin-bottom: 30px;
 }
 
+/* Seccion carrusel */
+.carousel-item img:hover {
+    transform: scale(1.05); /* Aumenta el tamaño cuando el usuario pasa el mouse */
+}
+
+.carousel-item img {
+    width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: 500px; /* Altura fija para todas las imágenes */
+    object-fit: cover; /* Recorta la imagen para que llene el espacio sin deformarse */
+    border-radius: 10px; /* Opcional: Bordes redondeados */
+    transition: transform 0.5s ease-in-out;
+}
+
 /* Nosotros Section */
 #nosotros {
     margin-bottom: 50px;
